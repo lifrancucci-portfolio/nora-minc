@@ -1,0 +1,69 @@
+/* MAIN STYLES */
+@font-face {
+  font-family: 'Messapia';
+  src: url("../fonts/Messapia-Bold.otf");
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+:root {
+  /* --clr-light: rgb(236, 236, 236); */
+  --clr-light: rgb(255, 255, 255);
+  --clr-dark: rgb(0, 0, 0);
+  --clr-disabled: rgb(131, 131, 131);
+  --clr-accent: rgb(22, 244, 208);
+  --font-main: 'Messapia', sans-serif;
+}
+body {
+  background: var(--clr-dark);
+  color: var(--clr-light);
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: var(--font-main);
+}
+a {
+  cursor: pointer;
+}
+/* ----------------------------------------- */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid red; */
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+}
+header img {
+  width: 150px;
+}
+header h1 {
+  text-transform: uppercase;
+}
+nav {
+  margin-top: auto;
+  text-transform: lowercase;
+  padding-bottom: 3rem;
+}
+.upper {
+  text-transform: uppercase;
+}
+.page-content {
+  display: flex;
+  align-items: flex-end;
+  width: calc(100vw - 200px);
+  height: 100vh;
+  margin-left: 200px;
+  overflow-y: scroll;
+}
+.machine-gif img {
+  position: absolute;
+  width: 350px;
+  top: 3rem;
+  right: 3rem;
+}
+.project-info {
+  padding-bottom: 3rem;
+}
