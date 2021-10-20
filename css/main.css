@@ -72,10 +72,31 @@ header img {
 header h1 {
   text-transform: uppercase;
 }
+.logo {
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/logo2_recorte.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.logo:hover {
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/logo1_recorte.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 nav {
   margin-top: auto;
   text-transform: lowercase;
   padding-bottom: 3rem;
+}
+nav li:hover {
+  font-weight: bold;
 }
 .upper {
   text-transform: uppercase;
