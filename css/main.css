@@ -184,15 +184,17 @@ nav li:hover {
   display: flex;
   align-items: flex-end;
 }
-.section-cmp > * {
-  margin: 0 3rem 3rem;
-}
+/* .section-cmp > * {
+  margin: 0 3rem 1rem;
+} */
 .cmp-flyer img {
   width: 350px;
 }
-/* .cmp-flyer iframe {
-  width: 100%;
-} */
+.cmp-flyer iframe {
+  /* border: 1px solid red; */
+  height: 80vh;
+  margin: 0 3rem 1rem;
+}
 .cmp-info {
-  padding: 0 3rem;
+  padding: 0 3rem 3rem;
 }
