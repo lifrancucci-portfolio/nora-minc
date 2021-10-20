@@ -92,11 +92,19 @@ nav li:hover {
 .section span {
   font-weight: bold;
 }
-.section-stream iframe {
-  width: 85%;
-  height: 85%;
+.section-stream {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 15rem;
 }
-
+.section-stream iframe {
+  width: 75%;
+  height: 75%;
+}
+.section-stream p {
+  padding-top: 2rem;
+}
 .section-bios {
   /* border: 1px solid yellow; */
   width: 90%;
@@ -182,6 +190,9 @@ nav li:hover {
 .cmp-flyer img {
   width: 350px;
 }
+/* .cmp-flyer iframe {
+  width: 100%;
+} */
 .cmp-info {
   padding: 0 3rem;
 }
