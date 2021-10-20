@@ -1,35 +1,4 @@
 /* MAIN STYLES */
-/* @font-face {
-  font-family: 'Messapia';
-  font-style: normal;
-  font-weight: bold;
-  src: url("../fonts/Messapia-Bold.otf");
-}
-@font-face {
-  font-family: 'Messapia';
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/Messapia-Regular.otf");
-}
-@font-face {
-  font-family: 'Source Code Pro';
-  font-style: normal;
-  font-weight: lighter;
-  src: url("../fonts/SourceCodePro-Light.otf") format("opentype");
-}
-@font-face {
-  font-family: 'Source Code Pro';
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/SourceCodePro-Medium.otf") format("opentype");
-}
-@font-face {
-  font-family: 'Source Code Pro';
-  font-style: normal;
-  font-weight: bold;
-  src: url("../fonts/SourceCodePro-Bold.otf") format("opentype");
-} */
-
 *, *::after, *::before {
   box-sizing: border-box;
 }
@@ -94,6 +63,9 @@ nav {
   margin-top: auto;
   text-transform: lowercase;
   padding-bottom: 3rem;
+}
+nav li {
+  font-weight: lighter;
 }
 nav li:hover {
   font-weight: bold;

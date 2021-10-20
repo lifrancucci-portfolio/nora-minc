@@ -12,6 +12,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="js/main.js" charset="utf-8"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        contentLoaded();
+      });
+    </script>
   </head>
 
   <body>
@@ -23,16 +31,16 @@
       <nav>
         <ul>
           <li>
-            <a href="#stream">Stream</a>
+            <a id="link-stream" href="#stream">Stream</a>
           </li>
           <li>
-            <a href="#concept">Concept</a>
+            <a id="link-concept" href="#concept">Concept</a>
           </li>
           <li>
-            <a href="#bios">Bios</a>
+            <a id="link-bios" href="#bios">Bios</a>
           </li>
           <li class="upper">
-            <a href="#cmp">CMP</a>
+            <a id="link-cmp" href="#cmp">CMP</a>
           </li>
         </ul>
       </nav>
@@ -40,7 +48,7 @@
 
     <div class="page-content">
 
-      <div id="streams" class="section section-stream">
+      <div id="stream" class="section section-stream">
         <iframe src="https://www.youtube.com/embed/DHQGKKxSgMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
 
