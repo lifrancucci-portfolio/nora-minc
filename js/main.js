@@ -6,15 +6,15 @@ function contentLoaded() {
   navToggle.checked = false;
 
   // LOADING SCREEN
-  // const loading = document.getElementById("loading");
-  //
-  // function loadPage() {
-  //   loading.classList.add("fadeout");
-  //   loading.addEventListener("transitionend", function(e) {
-  //     loading.style.display="none";
-  //   })
-  // }
-  // loading.addEventListener("click", loadPage);
+  const loading = document.getElementById("loading");
+
+  function loadPage() {
+    loading.classList.add("fadeout");
+    loading.addEventListener("transitionend", function(e) {
+      loading.style.display="none";
+    })
+  }
+  loading.addEventListener("click", loadPage);
 
   // NAV LINKS
   const navLinks = document.querySelectorAll(".nav-link");
