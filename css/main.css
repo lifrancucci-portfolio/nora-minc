@@ -114,9 +114,9 @@ nav li:hover {
 .page-content {
   /* border: 1px solid yellow; */
   /* width: calc(100vw - 200px); */
-  height: 100vh;
+  /* height: 100vh; */
   margin-left: 200px;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 .section {
   position: relative;
@@ -247,6 +247,73 @@ nav li:hover {
 }
 
 /* --------------- MEDIA QUERIES --------------- */
+
+@media screen and (max-width: 900px) {
+  body {
+    font-size: .8rem;
+  }
+  header {
+    width: 150px;
+    font-size: 1.2em;
+  }
+  .logo,
+  .logo:hover {
+    width: 150px;
+    height: 150px;
+  }
+  .page-content {
+    margin-left: 150px;
+  }
+  /* STREAM */
+  .section-stream {
+    margin-left: 0;
+  }
+  .stream-video {
+    width: 75vw;
+  }
+
+  /* CONCEPT */
+  .section-concept {
+    flex-direction: column;
+  }
+
+  /* CMP */
+  .cmp-flyer video {
+    width: 30vw;
+  }
+
+  /* BIOS */
+  .one {
+    grid-column: 1 / 2;
+    grid-row: 1;
+  }
+  .two {
+    grid-column: 3 / 4;
+    grid-row: 1;
+  }
+  .three {
+    grid-column: 1 / 2;
+    grid-row: 2;
+  }
+  .four {
+    grid-column: 2 / 3;
+    grid-row: 2;
+  }
+  .five {
+    grid-column: 3 / 4;
+    grid-row: 2;
+  }
+  .six {
+    grid-column: 1 / 2;
+    grid-row: 3;
+  }
+  .seven {
+    grid-column: 2 / 3;
+    grid-row: 3;
+  }
+}
+
+/* SMALL DEVICES */
 @media screen and (max-width: 600px) {
   body {
     font-size: .7rem;
@@ -282,17 +349,12 @@ nav li:hover {
     padding-top: 0;
   }
 
-  /* CONCEPT */
-  .section-concept {
-    flex-direction: column;
-  }
-
   /* BIOS */
   .section-bios {
     width: calc(100vw - 75px);
     padding: 0 10rem;
   }
-  .one {
+  /* .one {
     grid-column: 1 / 2;
     grid-row: 1;
   }
@@ -319,28 +381,47 @@ nav li:hover {
   .seven {
     grid-column: 2 / 3;
     grid-row: 3;
-  }
-
+  } */
   /* CMP */
   .cmp-info {
     padding: 1em;
   }
+  @media (orientation: portrait) {
+    header {
+      padding-left: 1em;
+      padding-right: 1em;
+      height: 50px;
+    }
+    .logo,
+    .logo:hover {
+      width: 50px;
+      height: 50px;
+    }
+    nav {
+      padding-left: 2em;
+    }
+    .page-content {
+      margin: 0;
+      padding-top: 50px;
+    }
+    .machine-gif img {
+      width: 90vw;
+    }
+    .cmp-flyer video {
+      width: 90vw;
+      height: auto;
+      margin: 0;
+    }
+  }
 }
+
 @media (orientation: portrait) {
   /* NAVIGATION */
   header {
     flex-direction: row;
     width: 100vw;
-    height: 50px;
     align-items: center;
     justify-content: space-between;
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-  .logo,
-  .logo:hover {
-    width: 50px;
-    height: 50px;
   }
   nav {
     flex-grow: 1;
@@ -348,7 +429,6 @@ nav li:hover {
     width: 100%;
     top: 100%;
     left: 0;
-    padding-left: 2em;
     transform: scale(1, 0);
     transform-origin: top;
     transition: transform 400ms ease-in-out;
@@ -363,8 +443,6 @@ nav li:hover {
   /* STREAM */
   .page-content {
     width: 100vw;
-    margin: 0;
-    padding-top: 50px;
   }
   .stream-video {
     width: 100vw;
@@ -375,9 +453,6 @@ nav li:hover {
   }
   .project-info {
     padding: 0;
-  }
-  .machine-gif img {
-    width: 90vw;
   }
   /* BIOS */
   .section-bios {
@@ -413,15 +488,11 @@ nav li:hover {
     grid-column: 1 / 2;
     grid-row: 4;
   }
-
   /* CMP */
   .section-cmp {
     flex-direction: column;
   }
   .cmp-flyer video {
-    width: 90vw;
-    height: auto;
-    margin: 0;
     order: 2;
   }
   .cmp-info {
