@@ -1,25 +1,34 @@
 function contentLoaded() {
 
+  // HEADER TOGGLE
+  const navToggle = document.getElementById("nav-toggle");
+  // Make nav always start closed
+  navToggle.checked = false;
+
   // LOADING SCREEN
-  const loading = document.getElementById("loading");
+  // const loading = document.getElementById("loading");
+  //
+  // function loadPage() {
+  //   loading.classList.add("fadeout");
+  //   loading.addEventListener("transitionend", function(e) {
+  //     loading.style.display="none";
+  //   })
+  // }
+  // loading.addEventListener("click", loadPage);
 
-  function loadPage() {
-    // loading.style.display="none";
-    loading.classList.add("fadeout");
-    loading.addEventListener("transitionend", function(e) {
-      loading.style.display="none";
-    })
-  }
-
-  loading.addEventListener("click", loadPage);
-
-  // Nav Links
+  // NAV LINKS
+  const navLinks = document.querySelectorAll(".nav-link");
   const linkStream = document.getElementById("link-stream");
   const linkConcept = document.getElementById("link-concept");
   const linkBios = document.getElementById("link-bios");
   const linkCMP = document.getElementById("link-cmp");
 
-  // Nav Sections
+  // Close nav on link click
+  navLinks.forEach((navLink) => {
+    navLink.addEventListener("click", (e) => { navToggle.checked = false})
+  });
+
+  // NAV SECTIONS
   const sectionStream = document.getElementById("stream");
   const sectionConcept = document.getElementById("concept");
   const sectionBios = document.getElementById("bios");
@@ -27,6 +36,7 @@ function contentLoaded() {
 
   const sections = document.querySelectorAll(".section");
 
+  // Make links bold when hovering over corresponding section
   function makeBold(evt) {
     let currentSection = evt.target.id;
     switch(true) {
@@ -44,7 +54,7 @@ function contentLoaded() {
         break;
     }
   }
-
+  // Return links to light
   function makeLight(evt) {
     let currentSection = evt.target.id;
     switch(true) {
@@ -63,11 +73,6 @@ function contentLoaded() {
     }
   }
 
-  // EVENT LISTENERS
-  // sectionStream.addEventListener("mouseover", makeBold);
-  // sectionConcept.addEventListener("mouseover", makeBold);
-  // sectionBios.addEventListener("mouseover", makeBold);
-  // sectionCMP.addEventListener("mouseover", makeBold);
   sections.forEach((section) => { section.addEventListener("mouseover", makeBold)
   });
   sections.forEach((section) => { section.addEventListener("mouseleave", makeLight)

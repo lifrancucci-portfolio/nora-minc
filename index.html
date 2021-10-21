@@ -24,30 +24,32 @@
 
   <body>
 
-    <div id="loading" class="loading">
+    <!-- <div id="loading" class="loading">
       <p>Onboarding</p>
       <p>Click en cualquier lugar para acceder a la web</p>
       <img src="img/logo2_recorte.png" alt="Logo Nora Minc">
       <h1>Nora Minc</h1>
-    </div>
+    </div> -->
 
     <header>
-      <div class="logo"></div>
-      <!-- <img src="img/logo2.png" alt="The Nora Minc logo"> -->
+      <input id="nav-toggle" class="nav-toggle" type="checkbox" name="nav-toggle" checked="false" autocomplete="off">
+      <label class="nav-toggle-label" for="nav-toggle">
+        <div class="logo"></div>
+      </label>
       <h1>Nora Minc</h1>
       <nav>
         <ul>
           <li>
-            <a id="link-stream" href="#stream">Stream</a>
+            <a id="link-stream" class="nav-link" href="#stream">Stream</a>
           </li>
           <li>
-            <a id="link-concept" href="#concept">Concept</a>
+            <a id="link-concept" class="nav-link" href="#concept">Concept</a>
           </li>
           <li>
-            <a id="link-bios" href="#bios">Bios</a>
+            <a id="link-bios" class="nav-link" href="#bios">Bios</a>
           </li>
           <li class="upper">
-            <a id="link-cmp" href="#cmp">CMP</a>
+            <a id="link-cmp" class="nav-link" href="#cmp">CMP</a>
           </li>
         </ul>
       </nav>
@@ -56,15 +58,22 @@
     <div class="page-content">
 
       <div id="stream" class="section section-stream">
-        <iframe src="https://www.youtube.com/embed/DHQGKKxSgMs" title="Nora Minc Live Stream" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <div class="stream-video">
+          <div class="iframe-wrapper">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DHQGKKxSgMs" title="Nora Minc Live Stream" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
         <p>
           <span>Próximo Live Set</span>
-          <br>.<br>
+          <br><span class="separator">.<br></span>
           Domingo 31 de Octubre de 2021 <br>
           7PM Argentina
-          <br>.<br>
+          <br><span class="separator">.<br></span>
           Festival Segundas Intenciones auspiciado por <span>@plataformalodo</span>
         </p>
+
       </div>
 
       <div id="concept" class="section section-concept">
@@ -150,13 +159,13 @@
         </div>
         <p class="cmp-info">
           <span>Cajita Musical Planetaria</span> es una performance musical interpretada por 5 artistxs ubicadxs en distintas partes del planeta y transmitida en vivo por Streaming.
-          <br>.<br>
+          <br class="separator">.<br>
           Sábado 5 de Septiembre de 2020
           <br>
           6PM Argentina
           <br>
           4PM Mexico
-          <br>.<br>
+          <br class="separator">.<br>
           Presentado por <span>Prohelvetia</span>.
         </p>
       </div>
