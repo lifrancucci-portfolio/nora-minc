@@ -113,9 +113,9 @@ nav li:hover {
 }
 .machine-gif img {
   width: 350px;
-  /* position: absolute;
-  top: 3rem;
-  right: 3rem; */
+}
+.project-info {
+  padding: 2.5em;
 }
 
 .section-bios {
@@ -193,7 +193,7 @@ nav li:hover {
 .cmp-flyer img {
   width: 350px;
 }
-.cmp-flyer iframe {
+.cmp-flyer video {
   /* border: 1px solid red; */
   height: 80vh;
   margin: 0 3rem 1rem;
