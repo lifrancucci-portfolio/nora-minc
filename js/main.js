@@ -1,5 +1,18 @@
 function contentLoaded() {
 
+  // LOADING SCREEN
+  const loading = document.getElementById("loading");
+
+  function loadPage() {
+    // loading.style.display="none";
+    loading.classList.add("fadeout");
+    loading.addEventListener("transitionend", function(e) {
+      loading.style.display="none";
+    })
+  }
+
+  loading.addEventListener("click", loadPage);
+
   // Nav Links
   const linkStream = document.getElementById("link-stream");
   const linkConcept = document.getElementById("link-concept");

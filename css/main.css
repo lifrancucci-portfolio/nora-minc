@@ -26,6 +26,40 @@ a {
 }
 /* ----------------------------------------- */
 
+/* ------------- LOADING SCREEN ------------- */
+.loading {
+  background: var(--clr-dark);
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  transition: all .5s linear;
+}
+.loading p {
+  color: red;
+}
+.loading img {
+  width: 45vw;
+  height: 45vh;
+  object-fit: contain;
+  margin: 2rem;
+}
+.loading h1 {
+  font-size: 3rem;
+}
+.fadeout {
+  opacity: 0;
+}
+
+
+/* ------------- HEADER ------------- */
+
 header {
   display: flex;
   flex-direction: column;
@@ -200,4 +234,9 @@ nav li:hover {
 }
 .cmp-info {
   padding: 0 3rem 3rem;
+}
+
+/* --------------- MEDIA QUERIES --------------- */
+@media screen and (max-width: 900px) {
+
 }
