@@ -45,10 +45,7 @@ span {
   transition: all .5s linear;
 }
 .loading img {
-  width: 45vw;
-  height: 45vh;
-  object-fit: contain;
-  margin: 2rem;
+  width: 35vw;
 }
 .fadeout {
   opacity: 0;
