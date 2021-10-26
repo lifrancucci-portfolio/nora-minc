@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>nora minc</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main_old.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="js/main_old.js" charset="utf-8"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        contentLoaded();
+      });
+    </script>
+  </head>
+
+  <body>
+
+    <div id="loading" class="loading">
+      <p>Onboarding</p>
+      <p>Click en cualquier lugar para acceder a la web</p>
+      <img src="img/logo2_recorte.png" alt="Logo Nora Minc">
+      <h1>Nora Minc</h1>
+    </div>
+
+    <header>
+      <input id="nav-toggle" class="nav-toggle" type="checkbox" name="nav-toggle" checked="false" autocomplete="off">
+      <label class="nav-toggle-label" for="nav-toggle">
+        <div class="logo"></div>
+      </label>
+      <h1>Nora Minc</h1>
+      <nav>
+        <ul>
+          <li>
+            <a id="link-stream" class="nav-link" href="#stream">Stream</a>
+          </li>
+          <li>
+            <a id="link-concept" class="nav-link" href="#concept">Concept</a>
+          </li>
+          <li>
+            <a id="link-bios" class="nav-link" href="#bios">Bios</a>
+          </li>
+          <li class="upper">
+            <a id="link-cmp" class="nav-link" href="#cmp">CMP</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="page-content">
+
+      <div id="stream" class="section section-stream">
+
+        <div class="stream-video">
+          <div class="iframe-wrapper">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DHQGKKxSgMs" title="Nora Minc Live Stream" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <p>
+          <span>Próximo Live Set</span>
+          <br><span class="separator">.<br></span>
+          Domingo 31 de Octubre de 2021 <br>
+          7PM Argentina
+          <br><span class="separator">.<br></span>
+          Festival Segundas Intenciones auspiciado por <span>@plataformalodo</span>
+        </p>
+
+      </div>
+
+      <div id="concept" class="section section-concept">
+        <p class="project-info">
+          <span>NORA MINC</span> nace entre 2020 y 2021 gracias al apoyo de Plataforma LODO y Pro Helvetia para la creación de una pieza musical telemática interpretada en vivo, titulada <span>Cajita Musical Planetaria</span>.
+          <br><br>
+          El ensamble investiga el contexto socio-tecnológico en la búsqueda de nuevos soportes y metodologías para que las personas puedan crear colaborativamente aún estando en distintos lugares del planeta.
+        </p>
+        <div class="machine-gif">
+          <img src="img/4.jpg" alt="An animated gif of a musical device">
+        </div>
+      </div>
+
+      <div id="bios" class="section section-bios">
+
+        <div class="bio-card one">
+          <h3>Bárbara Togander</h3>
+          <a href="#">
+            <img src="img/barbara_togander.jpg" alt="">
+          </a>
+          <p>Artista vocal</p>
+        </div>
+
+        <div class="bio-card two">
+          <h3>Emma Harumi</h3>
+          <a href="#">
+            <img src="img/emma_harumi.jpg" alt="">
+          </a>
+          <p>Artista sonora</p>
+        </div>
+
+        <div class="bio-card three">
+          <h3>Nacho Sanchez</h3>
+          <a href="#">
+            <img src="img/nacho_sanchez.jpg" alt="">
+          </a>
+          <p>
+            Artista sonoro <br>
+            Gestor de proyectos
+          </p>
+        </div>
+
+        <div class="bio-card four">
+          <h3>Emiliano Montenegro</h3>
+          <a href="#">
+            <img src="img/emiliano_montenegro.jpg" alt="">
+          </a>
+          <p>Artista sonoro</p>
+        </div>
+
+        <div class="bio-card five">
+          <h3>Santiago Ocampo</h3>
+          <a href="#">
+            <img src="img/santiago_ocampo.png" alt="">
+          </a>
+          <p>Artista visual</p>
+        </div>
+
+        <div class="bio-card six">
+          <h3>Felipe Arias</h3>
+          <a href="#">
+            <img src="img/felipe_arias.jpg" alt="">
+          </a>
+          <p>Artista sonoro</p>
+        </div>
+
+        <div class="bio-card seven">
+          <h3>Rosario Murua</h3>
+          <a href="#">
+            <img src="img/rosario_murua.jpeg" alt="">
+          </a>
+          <p>Artista visual</p>
+        </div>
+
+      </div>
+
+      <div id="cmp" class="section section-cmp">
+        <div class="cmp-flyer">
+          <video autoplay loop muted>
+           <source src="vid/cpm_vid.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        </div>
+        <p class="cmp-info">
+          <span>Cajita Musical Planetaria</span> es una performance musical interpretada por 5 artistxs ubicadxs en distintas partes del planeta y transmitida en vivo por Streaming.
+          <br class="separator">.<br>
+          Sábado 5 de Septiembre de 2020
+          <br>
+          6PM Argentina
+          <br>
+          4PM Mexico
+          <br class="separator">.<br>
+          Presentado por <span>Prohelvetia</span>.
+        </p>
+      </div>
+
+    </div>
+
+  </body>
+</html>

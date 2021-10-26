@@ -25,152 +25,125 @@
 
   <body>
 
-    <div id="loading" class="loading">
+    <!-- <div id="loading" class="loading">
       <p>Onboarding</p>
       <p>Click en cualquier lugar para acceder a la web</p>
-      <img src="img/logo2_recorte.png" alt="Logo Nora Minc">
-      <h1>Nora Minc</h1>
-    </div>
+      <img src="img/isologo_recorte.png" alt="Logo Nora Minc">
+    </div> -->
 
     <header>
-      <input id="nav-toggle" class="nav-toggle" type="checkbox" name="nav-toggle" checked="false" autocomplete="off">
-      <label class="nav-toggle-label" for="nav-toggle">
-        <div class="logo"></div>
-      </label>
-      <h1>Nora Minc</h1>
-      <nav>
-        <ul>
-          <li>
-            <a id="link-stream" class="nav-link" href="#stream">Stream</a>
-          </li>
-          <li>
-            <a id="link-concept" class="nav-link" href="#concept">Concept</a>
-          </li>
-          <li>
-            <a id="link-bios" class="nav-link" href="#bios">Bios</a>
-          </li>
-          <li class="upper">
-            <a id="link-cmp" class="nav-link" href="#cmp">CMP</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header-content">
+        <img class="header-logo" src="img/nora_minc_black.png" alt="Nora Minc">
+        <nav>
+          <ul class="nav-links">
+            <li>
+              <a class="nav-link" id="link-info" href="#info">
+                info
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" id="link-personas" href="#personas">
+                personas
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" id="link-bitacora" href="#bitacora">
+                bitácora
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <div class="page-content">
+    <!-- ------------ SECTIONS ------------ -->
+    <div class="section-content">
 
+      <!-- ------------ STREAM ------------ -->
       <div id="stream" class="section section-stream">
-
         <div class="stream-video">
-          <div class="iframe-wrapper">
+          <div class="stream-iframe-wrapper">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DHQGKKxSgMs" title="Nora Minc Live Stream" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
-
-        <p>
-          <span>Próximo Live Set</span>
-          <br><span class="separator">.<br></span>
-          Domingo 31 de Octubre de 2021 <br>
-          7PM Argentina
-          <br><span class="separator">.<br></span>
-          Festival Segundas Intenciones auspiciado por <span>@plataformalodo</span>
-        </p>
-
       </div>
 
-      <div id="concept" class="section section-concept">
-        <p class="project-info">
-          <span>NORA MINC</span> nace entre 2020 y 2021 gracias al apoyo de Plataforma LODO y Pro Helvetia para la creación de una pieza musical telemática interpretada en vivo, titulada <span>Cajita Musical Planetaria</span>.
-          <br><br>
+      <!-- ------------ INFO ------------ -->
+      <div id="info" class="section section-info">
+        <p>
+          NORA MINC nace en 2020, gracias al apoyo de Plataforma LODO y Pro Helvetia, con la creación de una pieza musical telemática interpretada en vivo, titulada Cajita Musical Planetaria.
+        </p>
+        <br>
+        <p>
           El ensamble investiga el contexto socio-tecnológico en la búsqueda de nuevos soportes y metodologías para que las personas puedan crear colaborativamente aún estando en distintos lugares del planeta.
         </p>
-        <div class="machine-gif">
-          <img src="img/4.jpg" alt="An animated gif of a musical device">
+      </div>
+
+      <!-- ----------- PERSONAS ----------- -->
+      <div id="personas" class="section section-personas">
+        <div class="stencils-gallery">
+          <div class="stencil st-1">
+            <img src="img/emma_stencil.png" alt="">
+            <p>Emma Harumi</p>
+          </div>
+          <div class="stencil st-2">
+            <img src="img/nach_stencil.png" alt="">
+            <p>Nacho Sanchez</p>
+          </div>
+          <div class="stencil st-3">
+            <img src="img/ro_stencil.png" alt="">
+            <p>Rosario Murua</p>
+          </div>
+          <div class="stencil st-4">
+            <img src="img/feli_stencil.png" alt="">
+            <p>Felipe Arias</p>
+          </div>
+
+          <div class="stencil st-5">
+            <img src="img/emi_stencil.png" alt="">
+            <p>Emiliano Montenegro</p>
+          </div>
+          <div class="stencil st-6">
+            <img src="img/barbi_stencil.png" alt="">
+            <p>Bárbara Togander</p>
+          </div>
+          <div class="stencil st-7">
+            <img src="img/santi_stencil.png" alt="">
+            <p>Santiago Ocampo</p>
+          </div>
         </div>
       </div>
 
-      <div id="bios" class="section section-bios">
-
-        <div class="bio-card one">
-          <h3>Bárbara Togander</h3>
-          <a href="#">
-            <img src="img/barbara_togander.jpg" alt="">
-          </a>
-          <p>Artista vocal</p>
+      <!-- ----------- BITACORA ----------- -->
+      <div id="bitacora" class="section section-bitacora">
+        <div class="bitacora-video">
+          <div class="bitacora-iframe-wrapper">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dxufBTFYfX4?start=4414" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </div>
-
-        <div class="bio-card two">
-          <h3>Emma Harumi</h3>
-          <a href="#">
-            <img src="img/emma_harumi.jpg" alt="">
-          </a>
-          <p>Artista sonora</p>
-        </div>
-
-        <div class="bio-card three">
-          <h3>Nacho Sanchez</h3>
-          <a href="#">
-            <img src="img/nacho_sanchez.jpg" alt="">
-          </a>
-          <p>
-            Artista sonoro <br>
-            Gestor de proyectos
-          </p>
-        </div>
-
-        <div class="bio-card four">
-          <h3>Emiliano Montenegro</h3>
-          <a href="#">
-            <img src="img/emiliano_montenegro.jpg" alt="">
-          </a>
-          <p>Artista sonoro</p>
-        </div>
-
-        <div class="bio-card five">
-          <h3>Santiago Ocampo</h3>
-          <a href="#">
-            <img src="img/santiago_ocampo.png" alt="">
-          </a>
-          <p>Artista visual</p>
-        </div>
-
-        <div class="bio-card six">
-          <h3>Felipe Arias</h3>
-          <a href="#">
-            <img src="img/felipe_arias.jpg" alt="">
-          </a>
-          <p>Artista sonoro</p>
-        </div>
-
-        <div class="bio-card seven">
-          <h3>Rosario Murua</h3>
-          <a href="#">
-            <img src="img/rosario_murua.jpeg" alt="">
-          </a>
-          <p>Artista visual</p>
-        </div>
-
-      </div>
-
-      <div id="cmp" class="section section-cmp">
-        <div class="cmp-flyer">
-          <video autoplay loop muted>
-           <source src="vid/cpm_vid.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video>
-        </div>
-        <p class="cmp-info">
-          <span>Cajita Musical Planetaria</span> es una performance musical interpretada por 5 artistxs ubicadxs en distintas partes del planeta y transmitida en vivo por Streaming.
-          <br class="separator">.<br>
-          Sábado 5 de Septiembre de 2020
+        <div class="bitacora-text">
+          <h3>Cajita Musical Planetaria</h3>
+          <p>5 de septiembre de 2020
+          <br><br>
+          Festival IN/OUT
           <br>
-          6PM Argentina
-          <br>
-          4PM Mexico
-          <br class="separator">.<br>
-          Presentado por <span>Prohelvetia</span>.
-        </p>
+          Coincidencias</p>
+          <img class="prohelvetia" src="img/pro-helvetia_slim.png" alt="">
+          <img class="lodo2" src="img/lodo_invert.png" alt="">
+        </div>
       </div>
 
+    </div>
+
+    <!-- -------- FOOTER / ASIDE -------- -->
+    <div class="aside">
+      <img class="aside-logo" src="img/logo_blanco.png" alt="isologo Nora Minc">
+      <h3>Next Live Set</h3>
+      <p class="set-title">Espectros Digitales Distantes</p>
+      <p class="fecha">31 de octubre</p>
+      <p>Festival <span class="accent">Segundas Intenciones</span></p>
+      <img class="lodo" src="img/lodo_invert.png">
+      <img class="fondo" src="img/fondo_metropolitano.png" alt="Fondo Metropolitano de las Artes">
     </div>
 
   </body>

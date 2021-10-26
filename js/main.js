@@ -1,27 +1,22 @@
 function contentLoaded() {
 
-  // HEADER TOGGLE
-  const navToggle = document.getElementById("nav-toggle");
-  // Make nav always start closed
-  navToggle.checked = false;
-
   // LOADING SCREEN
-  const loading = document.getElementById("loading");
-
-  function loadPage() {
-    loading.classList.add("fadeout");
-    loading.addEventListener("transitionend", function(e) {
-      loading.style.display="none";
-    })
-  }
-  loading.addEventListener("click", loadPage);
+  // const loading = document.getElementById("loading");
+  //
+  // function loadPage() {
+  //   loading.classList.add("fadeout");
+  //   loading.addEventListener("transitionend", function(e) {
+  //     loading.style.display="none";
+  //   })
+  // }
+  // loading.addEventListener("click", loadPage);
 
   // NAV LINKS
   const navLinks = document.querySelectorAll(".nav-link");
-  const linkStream = document.getElementById("link-stream");
-  const linkConcept = document.getElementById("link-concept");
-  const linkBios = document.getElementById("link-bios");
-  const linkCMP = document.getElementById("link-cmp");
+  // const linkStream = document.getElementById("link-stream");
+  const linkInfo = document.getElementById("link-info");
+  const linkPersonas = document.getElementById("link-personas");
+  const linkBitacora = document.getElementById("link-bitacora");
 
   // Close nav on link click
   navLinks.forEach((navLink) => {
@@ -29,10 +24,10 @@ function contentLoaded() {
   });
 
   // NAV SECTIONS
-  const sectionStream = document.getElementById("stream");
-  const sectionConcept = document.getElementById("concept");
-  const sectionBios = document.getElementById("bios");
-  const sectionCMP = document.getElementById("cmp");
+  // const sectionStream = document.getElementById("stream");
+  const sectionConcept = document.getElementById("info");
+  const sectionBios = document.getElementById("personas");
+  const sectionCMP = document.getElementById("bitacora");
 
   const sections = document.querySelectorAll(".section");
 
@@ -40,17 +35,17 @@ function contentLoaded() {
   function makeBold(evt) {
     let currentSection = evt.target.id;
     switch(true) {
-      case currentSection == "stream":
-        linkStream.style.fontWeight="bold";
+      // case currentSection == "stream":
+      //   linkStream.style.fontWeight="bold";
+      //   break;
+      case currentSection == "info":
+        linkInfo.style.fontWeight="bold";
         break;
-      case currentSection == "concept":
-        linkConcept.style.fontWeight="bold";
+      case currentSection == "personas":
+        linkPersonas.style.fontWeight="bold";
         break;
-      case currentSection == "bios":
-        linkBios.style.fontWeight="bold";
-        break;
-      case currentSection == "cmp":
-        linkCMP.style.fontWeight="bold";
+      case currentSection == "bitacora":
+        linkBitacora.style.fontWeight="bold";
         break;
     }
   }
@@ -58,17 +53,17 @@ function contentLoaded() {
   function makeLight(evt) {
     let currentSection = evt.target.id;
     switch(true) {
-      case currentSection == "stream":
-        linkStream.style.fontWeight="lighter";
+      // case currentSection == "stream":
+      //   linkStream.style.fontWeight="lighter";
+      //   break;
+      case currentSection == "info":
+        linkInfo.style.fontWeight="lighter";
         break;
-      case currentSection == "concept":
-        linkConcept.style.fontWeight="lighter";
+      case currentSection == "personas":
+        linkPersonas.style.fontWeight="lighter";
         break;
-      case currentSection == "bios":
-        linkBios.style.fontWeight="lighter";
-        break;
-      case currentSection == "cmp":
-        linkCMP.style.fontWeight="lighter";
+      case currentSection == "bitacora":
+        linkBitacora.style.fontWeight="lighter";
         break;
     }
   }
