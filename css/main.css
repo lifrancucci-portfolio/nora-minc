@@ -89,7 +89,7 @@ nav {
   flex: 1;
   align-items: center;
   justify-content: space-between;
-  padding-left: 4rem;
+  padding-left: 1rem;
   padding-right: 1rem;
 }
 .nav-links li {
@@ -203,7 +203,7 @@ nav {
   flex-direction: column;
   position: fixed;
   width: 300px;
-  height: calc(100vh - 6rem);
+  min-height: calc(100vh - 6rem);
   top: 0;
   right: 30px;
   padding: 1rem;
@@ -211,28 +211,28 @@ nav {
   font-size: 1.2em;
 }
 .aside p {
-  padding-top: 1em;
+  padding-top: .5em;
 }
 .aside-logo {
   align-self: center;
-  width: 150px;
+  width: 35%;
   margin: 1rem;
 }
 .set-title {
   font-style: italic;
 }
 .lodo {
-  width: 100px;
-  margin: 1em 0 0;
+  width: 80px;
+  margin: 1em 0;
 }
 .fecha {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 .fondo {
-  position: absolute;
+  /* position: absolute; */
   align-self: center;
   width: 100%;
-  bottom: 0;
+  /* bottom: 0; */
 }
 .accent {
   color: red;
