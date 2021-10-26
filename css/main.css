@@ -41,19 +41,12 @@ a {
   z-index: 100;
   transition: all .5s linear;
 }
-/* .loading p {
-  text-align: center;
-  color: red;
-} */
 .loading img {
   width: 45vw;
   height: 45vh;
   object-fit: contain;
   margin: 2rem;
 }
-/* .loading h1 {
-  font-size: 3rem;
-} */
 .fadeout {
   opacity: 0;
 }
@@ -89,8 +82,7 @@ nav {
   flex: 1;
   align-items: center;
   justify-content: space-between;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0 1rem;
 }
 .nav-links li {
   font-size: 1.2em;
@@ -135,9 +127,6 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem; */
 }
 .stencil {
   padding: 1rem;
@@ -202,6 +191,7 @@ nav {
   display: flex;
   flex-direction: column;
   position: fixed;
+  justify-content: space-between;
   width: 300px;
   min-height: calc(100vh - 6rem);
   top: 0;
@@ -239,6 +229,14 @@ nav {
 }
 
 /* ---------------- MEDIA QUERIES ---------------- */
+@media screen and (max-width: 1200px) {
+  .header-logo {
+    width: 250px;
+  }
+  .header-content {
+    margin: 0 1rem;
+  }
+}
 @media screen and (max-width: 900px) {
   header {
     width: 100vw;
@@ -257,7 +255,7 @@ nav {
     height: auto;
   }
   .stencil {
-    width: 50%;
+    width: 33.33%;
   }
   .section-bitacora {
     flex-direction: column;
@@ -293,14 +291,19 @@ nav {
     font-size: 1em;
   }
 }
-
 @media screen and (max-width: 600px) {
   .header-content {
+    /* border: 1px solid red; */
+    justify-content: center;
     margin: 0;
   }
+  nav {
+    display: none;
+  }
   .header-logo {
+    /* border: 1px solid green; */
     width: 150px;
-    margin-left: 0;
+    margin: 0;
   }
   .stream-video {
     width: 100%;
@@ -308,6 +311,9 @@ nav {
   .section {
     font-size: 1rem;
     padding: 1rem;
+  }
+  .stencil {
+    width: 50%;
   }
   .stencil p {
     font-size: inherit;
