@@ -25,6 +25,9 @@ h1 {
 a {
   cursor: pointer;
 }
+span {
+  font-weight: bold;
+}
 
 /* ------------- LOADING SCREEN ------------- */
 .loading {
@@ -131,6 +134,11 @@ nav {
 .stencil {
   padding: 1rem;
   width: 25%;
+  transition: transform .2s ease-in-out;
+}
+.stencil:hover {
+  transform: scale(1.1);
+  font-weight: bold;
 }
 .stencil img {
   width: 100%;
