@@ -45,7 +45,7 @@ span {
   transition: all .5s linear;
 }
 .loading img {
-  width: 35vw;
+  width: 70vw;
 }
 .fadeout {
   opacity: 0;
@@ -53,7 +53,6 @@ span {
 
 /* ------------- HEADER ------------- */
 header {
-  /* border: 1px solid red; */
   background: var(--clr-dark);
   display: flex;
   position: fixed;
@@ -93,7 +92,6 @@ nav {
   margin: 0 350px 2rem 2rem;
 }
 .section {
-  /* border: 1px solid red; */
   font-size: 1.5rem;
   padding: 7rem 3rem;
   width: 100%;
@@ -103,14 +101,12 @@ nav {
 /* ------------------- STREAM ------------------- */
 .stream-video {
   display: flex;
-  /* border: 1px solid red; */
   width: calc(100% - 2rem);
   padding: 1rem;
   align-items: center;
   justify-content: center;
 }
 .stream-iframe-wrapper {
-  /* border: 1px solid yellow; */
   position: relative;
   width: 100%;
   padding-bottom: 56.25%; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */
@@ -146,11 +142,9 @@ nav {
 
 /* ------------------ BIOS ------------------ */
 .bios-section {
-  /* border: 2px solid white; */
   overflow-x: scroll;
 }
 .bio {
-  /* border: 1px solid red; */
   display: none;
   justify-content: center;
   align-items: flex-start;
@@ -216,14 +210,12 @@ nav {
 /* ------------------ BITACORA ------------------ */
 .section-bitacora {
   display: flex;
-  /* flex-direction: row; */
   align-items: flex-end;
 }
 .section-bitacora h3 {
   font-weight: bold;
 }
 .bitacora-video {
-  /* border: 1px solid red; */
   flex-grow: 1;
   display: flex;
   width: calc(100% - 2rem);
@@ -232,7 +224,6 @@ nav {
   justify-content: center;
 }
 .bitacora-iframe-wrapper {
-  /* border: 1px solid yellow; */
   position: relative;
   width: 100%;
   padding-bottom: 56.25%; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */
@@ -293,10 +284,8 @@ nav {
   font-size: 1.3em;
 }
 .fondo {
-  /* position: absolute; */
   align-self: center;
   width: 100%;
-  /* bottom: 0; */
 }
 .accent {
   color: red;
@@ -312,6 +301,9 @@ nav {
   }
 }
 @media screen and (max-width: 900px) {
+  .loading img {
+    width: 100vw;
+  }
   header {
     width: 100vw;
   }
@@ -326,6 +318,7 @@ nav {
   }
   .section {
     padding: 2rem;
+    padding-top: 4rem;
     height: auto;
   }
   .stencil {
@@ -342,14 +335,12 @@ nav {
     flex-direction: column;
   }
   .bitacora-text {
-    /* border: 1px solid red; */
     width: 100%;
     padding-left: 3rem;
     align-items: flex-start;
     text-align: left;
   }
   .aside {
-    /* display: none; */
     position: relative;
     width: calc(100vw - 2rem);
     height: auto;
@@ -373,8 +364,10 @@ nav {
   }
 }
 @media screen and (max-width: 600px) {
+  .loading img {
+    width: 150vw;
+  }
   .header-content {
-    /* border: 1px solid red; */
     justify-content: center;
     margin: 0;
   }
@@ -382,7 +375,6 @@ nav {
     display: none;
   }
   .header-logo {
-    /* border: 1px solid green; */
     width: 150px;
     margin: 0;
   }
@@ -392,6 +384,7 @@ nav {
   .section {
     font-size: 1rem;
     padding: 1rem;
+    padding-top: 3rem;
   }
   .stencil {
     width: 50%;
